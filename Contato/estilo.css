@@ -1,0 +1,90 @@
+.esquerda{
+    width: 35%;
+    float: left;
+    height: 100vh;
+    position: relative;
+    min-width: 616px;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+.direita{
+    width: 65%;
+    float: right;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+.direita img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.total{
+    margin-top: 80px;
+    text-align: center;
+    justify-content: center;
+}
+#voltar{
+    text-align: center;
+}
+a{
+    color: black;
+}
+.campos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.campos label{
+    color: #0066b1;
+}
+.campos input{
+    border: 2px solid black;
+}
+
+#label-texto{
+    margin-bottom: 20px;
+}
+.total input[type="submit"] {
+  background-color: #0066b1;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 20%;
+  height: 30px;
+  padding: 7px;
+  border: 2px solid #0066b1;
+  border-radius: 3px;
+  text-align: center;
+}
+.total input[type="submit"]:hover {
+  background-color: #0066b1;
+  transform: scale(1.05);
+  color: white;
+}
+#imagem img{
+    width: 20%;
+    height: 20%;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    justify-content: center;
+}
+#imagem{
+    margin-top: 0px;
+}
+@media(max-width: 1000px){
+    .esquerda{
+        height: 500px;
+    }
+    .esquerda .campos{
+        flex-direction: column;
+        text-align: center;
+    }
+    .direita img{
+        width: 0px;
+        height: 0px;
+    }
+    .direita{
+        height: 0px;
+        width: 0px;
+    }    
+}
